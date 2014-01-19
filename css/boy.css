@@ -1,0 +1,41 @@
+
+body {
+  background-color: #b2cee6;
+}
+
+.header {
+  color: #8db5d8;
+  background-color: #689cca;
+  height: 15px;
+  width: 100%;
+}
+
+.main {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  color: #4383bc;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+
+
+.footer {
+  color: #8db5d8;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #689cca;
+  bottom: 0;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #8db5d8;
+}
