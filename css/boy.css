@@ -52,7 +52,7 @@ progress[value]::-webkit-progress-value {
   font-family: 'Open Sans', sans-serif;
   background-color: #689cca;
   bottom: 0;
-  height: 100px;
+  height: 20px;
   position: fixed;
   width: 100%;
   padding: 10px;
@@ -64,13 +64,17 @@ progress[value]::-webkit-progress-value {
   color: #8db5d8;
 }
 
-#github {
+.explanation {
+  width: 50%;
   font-family: 'Open Sans', sans-serif;
   color: #4383bc;
-  margin-top: 50px;
   text-decoration: none;
+  text-align: left;
+  margin: auto;
+  margin-top: 25px;
 }
 
 img {
   margin-top: 15px;
 }
+
