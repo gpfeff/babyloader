@@ -19,9 +19,10 @@ h1 {
   color: #4383bc;
 }
 
-p {
+.days {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  font-color: #4383bc;
 }
 
 progress {
@@ -64,8 +65,12 @@ progress[value]::-webkit-progress-value {
 }
 
 #github {
-  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
   color: #4383bc;
   margin-top: 50px;
+  text-decoration: none;
 }
 
+img {
+  margin-top: 15px;
+}
