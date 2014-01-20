@@ -1,9 +1,9 @@
 body {
-  background-color: #b2cee6;
+  background-color: #d88da1;
 }
 
 .header {
-  background-color: #689cca;
+  background-color: #ca6883;
   height: 25px;
   width: 100%;
 }
@@ -16,12 +16,23 @@ body {
 h1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 2em;
-  color: #4383bc;
+  color: #ca6883;
 }
 
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+}
+
+.github {
+  text-decoration: none;
+  color: #ca6883;
+  margin-top: 50px;
+}
+
+#id {
+  text-decoration: none;
+  color: #d88da1;
 }
 
 progress {
@@ -30,26 +41,26 @@ progress {
 }
 
 progress[value]::-webkit-progress-bar {
-  background-color: #8db5d8;
+  background-color: #d88da1;
   border-radius: 2px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
 progress::-webkit-progress-bar-value {
   -webkit-appearance: none;
-  background-color: #8db5d8;
+  background-color: #ca6883;
 }
 
 progress[value]::-webkit-progress-value {
-    background-color: #4383bc;
+    background-color: #ca6883;
     border-radius: 2px; 
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
 .footer {
-  color: #8db5d8;
+  color: #d88da1;
   font-family: 'Open Sans', sans-serif;
-  background-color: #689cca;
+  background-color: #ca6883;
   bottom: 0;
   height: 100px;
   position: fixed;
@@ -58,14 +69,8 @@ progress[value]::-webkit-progress-value {
   text-align: center;
 }
 
-.footer-link{
+a {
   text-decoration: none;
-  color: #8db5d8;
-}
-
-#github {
-  text-decoration: none;
-  color: #4383bc;
-  margin-top: 50px;
+  color: ##ca6883;
 }
 

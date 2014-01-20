@@ -5,6 +5,7 @@
     <title>BabyLoader</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <!-- Link to the correct style sheet for boy, girl or if you're keeping the baby's gender a surprise -->
     <link rel="stylesheet" type="text/css" href="css/boy.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/girl.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="css/surprise.css"> -->
@@ -12,9 +13,52 @@
   <body>
     <div class="header"></div>
     <div class="main">
-      <p>Baby Expected in X Days</p>
-      <progress max="100" value="80"></progress>
+      <h1>Loading Baby</h1>
+      <p class="Days">Version 2.0 Ships in <span class="days-to-go"></span>Days</p>
+      <progress id="progressbar" max="100" value="80"></progress>
+      <p id="github"><a href="https://github.com/tomhanlon/babyloader">You can find the project on Github here.</a></p>
     </div>
-    <div class="footer"><p>This page was built by <a href="http://tomhanlon.net">Tom Hanlon</a> on a diet of chips & queso in Austin, Texas.</div>
+    <div class="footer">
+      <p>This page was built by <a href="http://tomhanlon.net" class="footer-link">Tom Hanlon</a> on a diet of chips & queso in Austin, Texas.</p>
+    </div>
   </body>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/date.js"></script>
+  <script>
+
+    // "Dad, where do child elements come from?"
+    // "Well, when two parent elements love each other very much..."
+    // (I'm really sorry for that)
+
+    // Enter estimated date of conception in Year, Month, Date format
+    // Keep in mind it counts from 0, so January is 0 and December is 11
+    var conceptionDate = new Date(2014,0,1);
+    
+    // Baby ETA in Year, Month, and Date format
+    // Keep in mind it counts from 0 for the month so January is 0 and December is 11. It counts from 1 for the days. Weird? Yes.
+    var dueDate = new Date(2014,9,1);
+    
+    // Today's date
+    var today = Date.today()
+
+    // Days until due date
+    var daysToGo = Math.round(((dueDate - Date.today())/1000)/(24*60*60))
+
+    // Add daysToGo to page
+    $(document).ready(function() {      
+        $('.days-to-go').text(daysToGo + " ");
+    });
+
+    // Progress Bar
+    // Length of progress bar
+    var progressBarLength = Math.round(((dueDate - conceptionDate)/1000)/(24*60*60))
+
+    var progressAsOfToday = Math.round(((dueDate - today)/1000)/(24*60*60)) 
+
+    var progressAmount = 100 - ((progressAsOfToday / progressBarLength)*100)
+    $(document).ready(function() {      
+        $( "#progressbar" ).val(progressAmount);
+    });
+  </script>
+
 </html>
