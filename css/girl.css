@@ -53,6 +53,7 @@ progress[value]::-webkit-progress-value {
   background-color: #689cca;
   height: 250px;
   margin-top: 25px;
+  position: fixed;
   bottom: 0;
   width: 100%;
   padding: 25px;
@@ -72,6 +73,7 @@ progress[value]::-webkit-progress-value {
   text-align: left;
   margin: auto;
   margin-top: 25px;
+  margin-bottom: 150px;
 }
 
 img {
