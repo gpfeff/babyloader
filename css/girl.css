@@ -50,12 +50,12 @@ progress[value]::-webkit-progress-value {
 .footer {
   color: #d88da1;
   font-family: 'Open Sans', sans-serif;
-  background-color: #ca6883;
+  background-color: #689cca;
+  height: 250px;
+  margin-top: 25px;
   bottom: 0;
-  height: 20px;
-  position: fixed;
   width: 100%;
-  padding: 10px;
+  padding: 25px;
   text-align: center;
 }
 
