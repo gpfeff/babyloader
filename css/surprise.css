@@ -1,10 +1,9 @@
-
 body {
-  background-color: #d8c58d;
+  background-color: #95d88d;
 }
 
 .header {
-  background-color: #cab168;
+  background-color: #379b4e;
   height: 25px;
   width: 100%;
 }
@@ -17,12 +16,13 @@ body {
 h1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 2em;
-  color: #cab168;
+  color: #379b4e;
 }
 
-p {
+.days {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  font-color: #379b4e;
 }
 
 progress {
@@ -31,35 +31,50 @@ progress {
 }
 
 progress[value]::-webkit-progress-bar {
-  background-color: #d8c58d;
+  background-color: #95d88d;
   border-radius: 2px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
 progress::-webkit-progress-bar-value {
   -webkit-appearance: none;
-  background-color: #cab168;
+  background-color: #379b4e;
 }
 
 progress[value]::-webkit-progress-value {
-    background-color: #cab168;
+    background-color: #379b4e;
     border-radius: 2px; 
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
 .footer {
-  color: #d8c58d;
+  color: #95d88d;
   font-family: 'Open Sans', sans-serif;
-  background-color: #cab168;
+  background-color: #379b4e;
   bottom: 0;
-  height: 100px;
+  height: 20px;
   position: fixed;
   width: 100%;
   padding: 10px;
   text-align: center;
 }
 
-a {
+.footer-link{
   text-decoration: none;
-  color: #d8c58d;
+  color: #95d88d;
 }
+
+.explanation {
+  width: 50%;
+  font-family: 'Open Sans', sans-serif;
+  color: #379b4e;
+  text-decoration: none;
+  text-align: left;
+  margin: auto;
+  margin-top: 25px;
+}
+
+img {
+  margin-top: 15px;
+}
+

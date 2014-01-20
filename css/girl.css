@@ -19,20 +19,10 @@ h1 {
   color: #ca6883;
 }
 
-p {
+.days {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-}
-
-.github {
-  text-decoration: none;
-  color: #ca6883;
-  margin-top: 50px;
-}
-
-#id {
-  text-decoration: none;
-  color: #d88da1;
+  font-color: #4383bc;
 }
 
 progress {
@@ -62,15 +52,29 @@ progress[value]::-webkit-progress-value {
   font-family: 'Open Sans', sans-serif;
   background-color: #ca6883;
   bottom: 0;
-  height: 100px;
+  height: 20px;
   position: fixed;
   width: 100%;
   padding: 10px;
   text-align: center;
 }
 
-a {
+.footer-link{
   text-decoration: none;
-  color: ##ca6883;
+  color: #d88da1;
+}
+
+.explanation {
+  width: 50%;
+  font-family: 'Open Sans', sans-serif;
+  color: #ca6883;
+  text-decoration: none;
+  text-align: left;
+  margin: auto;
+  margin-top: 25px;
+}
+
+img {
+  margin-top: 15px;
 }
 
