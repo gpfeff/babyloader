@@ -52,7 +52,7 @@ progress[value]::-webkit-progress-value {
   color: #8db5d8;
   font-family: 'Open Sans', sans-serif;
   background-color: #689cca;
-  height: 50px;
+  height: 25px;
   margin-top: 25px;
   bottom: 0;
   position: fixed;
